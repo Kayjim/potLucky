@@ -50,7 +50,9 @@ class App extends Component {
       this.setState ({
         user
       });
+      window.location.reload(false);
     }));
+
   }
   componentDidMount() {
     auth.onAuthStateChanged((user) => {
